@@ -1,0 +1,133 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(45deg,#4070f4,#0b8c4c);
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 650px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px 30px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: inset -2px 2px 2px #fff;
+}
+
+.wrapper .title {
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 5px;
+  color: #fff;
+  text-shadow: 2px 2px 2px #222;
+  border-bottom: 1px solid #fff;
+}
+
+.wrapper .info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.input-box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  padding-bottom: 10px;
+}
+
+.input-box:nth-child(2n){
+  justify-content: end;
+}
+
+.input-box label {
+  width: 95%;
+  color: #fff;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.input-box input {
+  height: 40px;
+  width: 95%;
+  border-radius: 7px;
+  outline: none;
+  border: none;
+  padding: 0 10px;
+}
+
+.gender span {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+}
+.gender-buttons {
+  color: #fff;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.gender-buttons .gender {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.btn input {
+  display: block;
+  width: 100%;
+  margin-top: 25px;
+  font-size: 18px;
+  padding: 8px;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  background: #4070f4;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn input:hover {
+  background: #376af8;
+}
+
+@media (max-width:550px) {
+  .wrapper {
+    min-width: 280px;
+  }
+
+  .input-box {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .input-box:nth-child(2n){
+    justify-content: space-between;
+  }
+  .input-box input {
+    width: 100%;
+  }
+  .info {
+    max-height: 370px;
+    overflow: auto;
+  }
+
+  .info::-webkit-scrollbar {
+    width: 0;
+  }
+  .wrapper .gender-buttons {
+    justify-content: space-between;
+  }
+}
